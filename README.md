@@ -1,36 +1,22 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Running the Program
+Open Terminal: Open a terminal or command prompt and navigate to the folder containing dhke.py.
 
-## Getting Started
+Run the Program: Use the following command format to execute the script:
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+```
+python dhke.py <IV> <g_e> <g_c> <N_e> <N_c> <x> <gy_modN> <ciphertext> <plaintext>
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Replace the placeholder values with the actual inputs.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Example Command:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```
+python3 dhke.py "B2 2C 53 91 7A AC 5D 8F D6 3A B7 94 54 1C 54 E2" 255 31 255 14445 2100874001 8995936589171851885163650660432521853327227178155593274584417851704581358902 "76 56 21 0B B5 36 21 11 E8 9F 08 E5 53 8F CA DD 24 EE 8F 33 7F 76 86 44 B2 8D 82 BB 53 25 F3 61 5B 06 4C 04 5E 04 17 03 BA FA 17 85 7F 3D 48 60" "AdvancingCryptographyTechniquesFor2024Success"
+```
 
-## Learn More
+Expected Output: The output will display the decrypted plaintext and the encrypted ciphertext as a comma-separated pair.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```
+AdvancingCryptographyTechniquesFor2024Success, 76 56 21 0B B5 36 21 11 E8 9F 08 E5 53 8F CA DD 24 EE 8F 33 7F 76 86 44 B2 8D 82 BB 53 25 F3 61 5B 06 4C 04 5E 04 17 03 BA FA 17 85 7F 3D 48 60
+```

@@ -1,22 +1,19 @@
-Running the Program
-Open Terminal: Open a terminal or command prompt and navigate to the folder containing dhke.py.
-
-Run the Program: Use the following command format to execute the script:
+Run the program with the following command format:
 
 ```
-python dhke.py <IV> <g_e> <g_c> <N_e> <N_c> <x> <gy_modN> <ciphertext> <plaintext>
+python3 rsa.py <pe> <pc> <qe> <qc> <ee> <ec> <ciphertext> <plaintext>
 ```
 
-Replace the placeholder values with the actual inputs.
+Replace <pe>, <pc>, <qe>, <qc>, <ee>, <ec>, <ciphertext>, and <plaintext> with the provided values.
 
-Example Command:
-
-```
-python3 dhke.py "B2 2C 53 91 7A AC 5D 8F D6 3A B7 94 54 1C 54 E2" 255 31 255 14445 2100874001 8995936589171851885163650660432521853327227178155593274584417851704581358902 "76 56 21 0B B5 36 21 11 E8 9F 08 E5 53 8F CA DD 24 EE 8F 33 7F 76 86 44 B2 8D 82 BB 53 25 F3 61 5B 06 4C 04 5E 04 17 03 BA FA 17 85 7F 3D 48 60" "AdvancingCryptographyTechniquesFor2024Success"
-```
-
-Expected Output: The output will display the decrypted plaintext and the encrypted ciphertext as a comma-separated pair.
+Example Input Command:
 
 ```
-AdvancingCryptographyTechniquesFor2024Success, 76 56 21 0B B5 36 21 11 E8 9F 08 E5 53 8F CA DD 24 EE 8F 33 7F 76 86 44 B2 8D 82 BB 53 25 F3 61 5B 06 4C 04 5E 04 17 03 BA FA 17 85 7F 3D 48 60
+python3 rsa.py 252 3551320294972622704085158542068617432155596220113794691428435278300674188689 261 1194103838696593800434465377182188669000022374589724805392034067440035954998819 26 12320055 2109636589475319481690033161025118722547237230723991210476034408842255762453948587714804726263356891979001833011601694803200495628743260668599194164851838 6024799506
+```
+
+Expected Output: The program will print the decrypted plaintext and encrypted ciphertext separated by a comma.
+
+```
+6024799506,2109636589475319481690033161025118722547237230723991210476034408842255762453948587714804726263356891979001833011601694803200495628743260668599194164851838
 ```
